@@ -68,3 +68,30 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
+
+
+const playlists = [
+    "https://open.spotify.com/embed/playlist/6jFOdwYQRpmbE52hy93Nzt?utm_source=generator&theme=0",
+    "https://open.spotify.com/embed/playlist/3APkeWIqENIe4ntQod1HFV?utm_source=generator",
+    "https://open.spotify.com/embed/playlist/5GVACuxALlYbABVCSrqBlP?utm_source=generator&theme=0",
+    "https://open.spotify.com/embed/playlist/37i9dQZF1EIZfJjZpshJLx?utm_source=generator&theme=0",
+    "https://open.spotify.com/embed/playlist/5lKMlahA25C54hXMKLPO7O?utm_source=generator&theme=0",
+    "https://open.spotify.com/embed/playlist/2m2cMK9IN6rFWxoYqWVQNB?utm_source=generator",
+    "https://open.spotify.com/embed/playlist/6FU1mqR92M3Y7gL1yo1e59?utm_source=generator&theme=0",
+];
+
+function getRandomPlaylist() {
+    const randomIndex = Math.floor(Math.random() * playlists.length);
+    return playlists[randomIndex];
+}
+
+function embedPlaylist() {
+    const playlistContainer = document.querySelector('#music iframe');
+    const randomPlaylist = getRandomPlaylist();
+    playlistContainer.src = randomPlaylist;
+}
+
+// Call the function to embed a random playlist on page load
+window.onload = function() {
+    embedPlaylist();
+};
