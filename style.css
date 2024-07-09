@@ -1,184 +1,178 @@
 /* Basic Reset and Base Styles */
 html,
 body {
-    min-height: 100%;
-    /* Ensure full-page height */
-    margin: 0;
-    /* Remove default margin */
-    padding: 0;
-    /* Remove default padding */
-    box-sizing: border-box;
-    /* Include padding and border in the element's total width and height */
-    font-family: 'Arial', sans-serif;
-    /* Default font */
-    text-shadow: 5px 5px 10px #000000;
-    /* Text shadow */
-    scroll-behavior: smooth;
-    /* Smooth scrolling */
+  min-height: 100%;
+  /* Ensure full-page height */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
+  font-family: "Arial", sans-serif;
+  /* Default font */
+  text-shadow: 5px 5px 10px #000000;
+  /* Text shadow */
+  scroll-behavior: smooth;
+  /* Smooth scrolling */
 }
 
 /* Keyframes for background animation */
 @keyframes backgroundAnimation {
-    0% {
-        background-position: 0 0;
-    }
+  0% {
+    background-position: 0 0;
+  }
 
-    100% {
-        background-position: 100% 0;
-    }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 General Element Styling */ * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body Styling */
 body {
-    line-height: 1.6;
-    color: #f9f6f6;
-    animation: backgroundAnimation 10s ease infinite;
+  line-height: 1.6;
+  color: #f9f6f6;
+  animation: backgroundAnimation 10s ease infinite;
 }
 
 /* Container Styling */
 .container {
-    max-width: 960px;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
 }
 
 .container2 {
-    text-align: center;
-    max-width: 960px;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
+  text-align: center;
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
 }
 
 /* Header Styling */
 header {
-    color: #ffffff;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+  color: #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 header h1,
 header p {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
 /* Navigation Styling */
 nav ul {
-    list-style-type: none;
-    text-align: center;
-    padding: 10px 0;
+  list-style-type: none;
+  text-align: center;
+  padding: 10px 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Section Styling */
 section {
-    margin-bottom: 20px;
-    /* background: #fff; */
-    padding: 20px;
-    border-radius: 5px;
+  margin-bottom: 20px;
+  /* background: #fff; */
+  padding: 20px;
+  border-radius: 5px;
 }
 
 /* Project Item Styling */
 .project-item {
-
-    margin: 20px 0;
-    padding: 15px;
-    border-left: 5px solid #333;
+  margin: 20px 0;
+  padding: 15px;
+  border-left: 5px solid #333;
 }
 
 /* Footer Styling */
 footer {
-    text-align: center;
-    font-size: 0.5em;
-    padding: 20px;
-    color: #fff;
-    margin-top: 20px;
+  text-align: center;
+  font-size: 0.5em;
+  padding: 20px;
+  color: #fff;
+  margin-top: 20px;
 }
-
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
 }
 
 /* Particles.js Background Styling */
 #particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    /* Ensure it stays in the background */
-    background: linear-gradient(to right, #0e0d0f, #0c234c);
-    /* Gradient background */
-    overflow: hidden;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  /* Ensure it stays in the background */
+  background: linear-gradient(to right, #0e0d0f, #0c234c);
+  /* Gradient background */
+  overflow: hidden;
 }
-
 
 #myBtn {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed position */
-    bottom: 20px;
-    /* Place the button 20px from the bottom */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Ensure it sits above other content */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: #0c234c;
-    /* Set a background color */
-    color: white;
-    /* Set text color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 15px;
-    /* Add some padding */
-    border-radius: 10px;
-    /* Add rounded corners */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed position */
+  bottom: 20px;
+  /* Place the button 20px from the bottom */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Ensure it sits above other content */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #0c234c;
+  /* Set a background color */
+  color: white;
+  /* Set text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Add some padding */
+  border-radius: 10px;
+  /* Add rounded corners */
 }
 
-
 a:link {
-    color: #ffffff;
-    background-color: transparent;
-    text-decoration: none;
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 a:visited {
-    color: #fff;
-    background-color: transparent;
-    text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-
 #myBtn:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
+  background-color: #555;
+  /* Add a dark-grey background on hover */
 }
